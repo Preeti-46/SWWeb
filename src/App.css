@@ -1,0 +1,299 @@
+:root {
+  --purple: #a21caf;
+  --white: #ffffff;
+  --hovercolor:rgb(244, 172, 172);
+  --leftborder:#f43f5e;
+  --bodytext:1.2rem;
+  --bodytext1:1.4rem;
+  --heading:50px;
+  --subheading:1.7rem;
+  --mainheading:2.5rem;
+  --subweight:600;
+}
+html, body {overflow-x: hidden !important;width: 100vw !important;}
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+.link-li{
+  margin: 40px 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f3f4;
+}
+.footbar-I-I{
+  margin-left: 100px;
+}
+.link-li-p p{
+  font-size: 1.3rem;
+}
+.link-li-li{
+  padding-bottom: 80px;
+  margin: 40px 15px;
+}
+.logo-1{
+  font-size: 2.1rem;
+}
+.info1{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.info2{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.topbar{
+  width: 100%;
+  height: 60px;
+  background-color:var(--purple);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  z-index: 99;
+  font-size: var(--heading);
+}
+.sub-header{
+  font-size: var(--subheading);
+  font-weight: var(--subweight);
+}
+.top_section{
+  display: flex;
+  align-items: center;
+}
+.top-info{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.container{
+  display:flex;
+  width: 100%;
+}
+main{
+  margin-top: 80px;
+  width: 100%;
+}
+.web-links ul li p{
+  font-size: var(--bodytext1);
+}
+.sidebar{
+  background:#86198f;
+  color:#e1e6ec;
+  height: 100vh;
+  width: 270px;
+  transition: all 0.5s;
+  overflow-y:auto;
+  position: fixed;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  overflow-wrap: normal;
+  z-index: 88;
+}
+.sidebar::-webkit-scrollbar{
+  width: 10px;
+}
+.logo{
+  font-size: var(--mainheading);
+}
+.bars{
+  position: fixed;
+  left: 70px;
+  /* font-size: 23px; */
+  color:white;
+  display: none;
+}
+.side-data{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-bar{
+   background-color: #fecaca;
+   position: fixed; 
+   top: 94%;
+    margin-left: 270px;
+    width: 100vw;
+    padding: 15px 0px; 
+    display: flex;
+  
+    padding-left: 200px;
+    gap: 5px;
+   
+}
+.footbar-1 p{
+  font-size: 1.2rem;
+}
+.info1 img{
+  width: 70px;
+  height: 70px;
+}
+@media screen and (max-width:1024px){
+ 
+  .bars{
+    display: block;
+    left: 10px;
+    top: 28px;
+    font-size: 15px;
+  }
+  .link-li{
+    margin: 10px 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+  }
+  .link-li-p p{
+    font-size: 1rem;
+  }
+  .info1 img{
+    
+    margin-left: 20px;
+  }
+  .web-links ul li p{
+    font-size: 1.2rem;
+   padding-bottom: 10px;
+  }
+  .sidebar{
+    width: 200px;
+  }
+  .info1{
+    gap: 5px;
+  }
+  .info2{
+    gap: 7px;
+    letter-spacing: normal;
+
+  }
+  
+  .footer-bar{
+    display: none;
+  }
+  
+  .sidebar{
+    display: none;
+  }
+ 
+  .top-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  
+ .topbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 27px 1px;
+    font-size: 10px;
+  }
+  .logo-1{
+    font-size: 15px;
+  }
+}
+.link{
+  color: #fff;
+  transition: all 0.5s;
+  border-bottom:1px solid #f8fafc;
+  margin:10px 20px;
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  font-weight: 400;
+
+}
+.link_symbol:hover{
+  font-size: large;
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+.link:hover{
+  color:rgb(246, 163, 191);
+  transition: all 0.5s;
+}
+.App{
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.active{
+  color: rgb(244, 172, 172);
+  font-size: 1rem;
+ 
+}
+.icon, .link_text{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.info1 img{
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+}
+.side-data{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.footbar-1 p{
+  font-size: 1rem;
+}
+.image-div img{
+  width: 250px;
+  height: 250px;
+}
+.contact-banner{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media only screen and (min-width: 1700px) {
+  .logo-1{
+    font-size: 2.4rem;
+  }
+  .info1 img{
+    width: 75px;
+    height: 75px;
+  }
+  .image-div img{
+    width: 800px;
+  }
+  .topbar{
+    height: 75px;
+    padding: 15px 0px;
+  }
+  main{
+    margin-top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .div-contact{
+    font-size: 1.7rem;
+  }
+  .sidebar{
+    width: 18%;
+  }
+  .web-links ul li p{
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .footer-bar{
+    top: 95%;
+    font-size: 1.7rem;
+    padding-left: 390px;
+    align-items: center;
+    
+  }
+  .footbar-1 p{
+    font-size: 1.7rem;
+  }
+  .info1{
+    gap: 15px;
+  }
+}
