@@ -1,99 +1,99 @@
-.wellness-section {
-    margin-top: 110px;
-    margin-left: 280px;
-    color: #333;
-    margin-bottom: 10%;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
-
-.wellness-centre {
-    margin-right: 10px;
-}
-.fs-font p{
-    font-size: 1.2rem;
-    line-height: 27px;
-}
-.wellness-header{
-    animation: fade-up 0.5s;
-}
-.wellness-centre{
-    animation: fade-up 0.5s;
-}
-.wellness-header p {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: rgb(30, 64, 175);
-}
-.wellness-text{
-    padding: 0px 30px;
-    animation: fade-up 0.5s;
-}
-.wellness-text p {
-    font-size: 1.3rem;
-    line-height: 27px;
-}
-
-.well-coun {
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.hostel-imagee-2 {
-    width: 700px;
-    animation: fade-up 0.5s;
-}
-
-.wellness-sub-header {
-    font-size: 1.5rem;
-}
-
-.wellness-link {
-    font-size: 1.2rem;
-}
-
-.counselling:hover {
-    border: 1px solid #f43f5e;
-}
-
-.wellness-centre img {
-    width: 45vw;
-    height: 50vh;
-}
-
-.dean {
-    width: 390px;
-}
-
-.ambulance-no {
-    animation: shad 1.5s linear infinite;
-    animation: fade-up 0.5s;
-}
-.ambulance-no{
-    padding: 50px;
-}
-.ambulance-no p{
-    font-size: 1.7rem;
+.sw-division-office{
+  margin-left: 280px;
+  margin-top: 110px;
+  margin-bottom: 10%;
 }
 
 @keyframes fade-down {
-    0%{
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+  0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+  }
 }
 @keyframes fade-up {
-    0%{
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+  0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+  }
 }
+.fs-small{
+  font-size: 1.1rem;
+  color: #333;
+}
+.sw-organo{
+  position: absolute;
+   right: 100px;
+    padding: 10px; 
+    border: 2px solid #86198f; 
+    font-size: 1.3rem; 
+    font-weight: 600;
+    width: 280px;
+}
+
+.wrapper>div {
+  border: 2px solid  #fae8ff;
+  border-radius: 5px;
+  background-color: #fae8ff;
+  color: black;
+}
+
+.first-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  
+  height: 250px;
+  animation: fade-up 0.5s;
+}
+.first-info img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.office-staff {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 1rem;
+}
+.office-staff img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.office-staff-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.first-info{
+  gap: 6px;
+}
+.office-staff-1 .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 15px;
+}
+.click-here{animation: shad 1.5s linear infinite;}
 @keyframes shad {
     0% {
         opacity: 1;
@@ -109,130 +109,125 @@
         opacity: 1;
     }
 }
-
-.wellness-center:hover {
-    border: 1px solid #f43f5e;
-}
-.wellness-header{
-    margin-left: 30px;
-}
-
-@media (max-width:1024px) {
-    .wellness-section {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 110px;
-       
-
-        width: 100%;
-    }
+.sw-organo{animation: shadd 1.5s linear infinite;}
+@keyframes shadd{
+  0%{
     
-    .fs-font p{
-        font-size: 1rem;
-        line-height: 30px;
-    }
-    .ambulance-no{
-        padding: 10px;
-    }
-    .ambulance-no p{
-        font-size: 1.3rem;
-    }
-    .hosetl-imagee-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .wellness-text {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .dean {
-        width: 100%;
-        height: 320px;
-        margin: auto;
-    }
-    
-    .wellness-section p {
-        font-size: 1.1rem;
-        line-height: 30px;
-    }
-
-    .wellness-section-s1 {
-        flex-wrap: wrap;
-    }
-
+    border-bottom: 11px solid #86198f;
+  }
+  50%{
    
-
-    .wellness-centre {
-        margin: 0px 10px;
-        margin-bottom: 30px;
-        width: 100%;
-
-
-    }
-
-    .counselling-centre {
-        width: 100%;
-        margin-left: 40px;
-    }
-
-    .wellness-centre img {
-        width: 400px;
-        height: 400px;
-
-
-    }
-
-    .well-coun {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .wellness-counselling-ce {
-        flex-wrap: wrap;
-        gap: 100px;
-        padding: 10px;
-    }
-    .wellness-header p {
-        font-weight: 600;
-        font-size: 1.3rem;
-        color: rgb(30, 64, 175);
-    }
+  }
+  100%{
+    
+  }
 }
 
+@media screen and (max-width:1024px) {
+  .sw-division-office{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 110px;
+   
+  }
+  
 
-@media (min-width:1700px) {
-    .first-info {
-        width: 500px;
-        height: 300px;
-    }
-
-    .dean {
-        width: 550px;
-    }
-    .wellness-text{
-        margin-bottom: 30px;
-        margin-top: 30px;
-        padding: 0px 20px;
-    }
-    .wellness-section p {
-        font-size: 1.5rem;
-        line-height: 35px;
-        
-    }
-    .wellness-section {
-       padding-left: 50px;
-       padding-right: 150px;
-      
-    }
-    .wellness-header p{
-        font-size: 2.3rem;
-    }
-   .wellness-centre  li{
-        font-size: 1.7rem;
-    }
-    .counselling-centre li{
-        font-size: 1.7rem;
-    }
+  .designation{
+    font-size: 1rem;
+  }
+  .about-des{
+    font-size: 0.9rem;
+    color: #2E2E2E;
+  }
+  .name{
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .wrapper{
+    flex-wrap: wrap;
+   
+    gap: 40px;
+  }
+  .first-info{
+    width: 80vw;
+    margin:auto;
+    height: 310px;
+  }
+  .sw-division-office{
+    margin-top: 110px;
+    
+  }
+  .sw-division-office-1{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  .about-info{
+    font-size: 1.2rem;
+  }
+.dean{
+  width: 350px;
 }
+
+  
+  .sw-organo{
+    position: relative;
+    top: 130px;
+    left: 1px;
+    right: 10px;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  
+}
+@media (min-width:1700px){
+  .sw-division-office{
+   padding-left: 100px;
+   padding-right: 30px;
+  }
+  .dean{
+    width: 100%;
+  }
+  .first-info{
+    width: 420px;
+    gap: 8px;
+  }
+  .name{
+    font-size: 1.7rem;
+  }
+
+}
+/* @media only screen and (min-width: 1700px) {
+  .sw-division-office{
+    margin-left: 330px;
+    margin-right: 10px;
+   
+  }
+  .first-info{
+width: 420px;
+height: 300px;
+  }
+  .office-staff img{
+    width: 120px;
+    height: 120px;
+  }
+  .name{
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .designation{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .about-des{
+    font-size: 1.2rem;
+    line-height: 27px;
+  }
+}
+ */
