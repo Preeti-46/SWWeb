@@ -8,6 +8,7 @@ import AnimatedRoutes from './pages/AnimatedRoutes';
 const App = () => {
 
   
+  
   return (
     <>
     

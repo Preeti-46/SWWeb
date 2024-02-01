@@ -128,7 +128,7 @@ function Home() {
                   <p >Administration Block, Ground Floor, Right Wing</p>
                   <p >Belur Industrial Area, Chikkamalligawad,</p>
                   <p >Off Pune-Bengaluru Highway,</p>
-                  <p>Dharwad, Karnataka, India - 580011</p>
+                  <p>Dharwad, Karnataka, India - 580007</p>
                 </div>
               </div>
               <div className='div-contact'>For more information contact us-</div>

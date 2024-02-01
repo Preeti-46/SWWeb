@@ -8,12 +8,10 @@ import wellnesscentre from './images/wellnesscentre.jpg';
 import yourDost from './PdfFiles/YourDOST_steps_2023_07_19.pdf';
 import telemanasa from './PdfFiles/teleMANASA.pdf';
 import { motion } from 'framer-motion';
-import gsap from 'gsap';
-import AOS from "aos";
-import "aos/dist/aos.css"
 export default function WellnessSection() {
 
    
+
     const wellness = useRef();
     const counselling = useRef();
     const scrollHandler = (elmRef) => {
@@ -21,13 +19,11 @@ export default function WellnessSection() {
         window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
     }
 
-   useEffect(()=>{
-    AOS.init({duration:"2000"})
-   },[])
+  
     return (
         <>
             <motion.div className='wellness-section' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-                <div className='wellness-header'><p style={{borderLeft: "5px solid #312e81", paddingLeft: "10px"}} data-aos="fade-right">Wellness</p></div>
+                <div className='wellness-header'><p style={{borderLeft: "5px solid #312e81", paddingLeft: "10px"}} >Wellness</p></div>
                 <div className='hostel-imagee'>
                     <div className='hosetl-imagee-1' style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "19px", fontSize: "1.3rem" }}>
                         <img src={wellnesscentre} alt='adminblock' className='hostel-imagee-2'></img>

@@ -4,7 +4,28 @@
     margin-top: 90px;
     margin-bottom: 10%;
     font-family: Arial, Helvetica, sans-serif;
+    animation: fade-up 0.5s;
 }
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+  }
+  @keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+  }
 
 .hostel-image img {
     width: 550px;

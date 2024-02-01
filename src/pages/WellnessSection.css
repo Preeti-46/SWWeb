@@ -12,6 +12,12 @@
     font-size: 1.2rem;
     line-height: 27px;
 }
+.wellness-header{
+    animation: fade-up 0.5s;
+}
+.wellness-centre{
+    animation: fade-up 0.5s;
+}
 .wellness-header p {
     font-weight: 600;
     font-size: 1.5rem;
@@ -19,6 +25,7 @@
 }
 .wellness-text{
     padding: 0px 30px;
+    animation: fade-up 0.5s;
 }
 .wellness-text p {
     font-size: 1.3rem;
@@ -32,6 +39,7 @@
 
 .hostel-imagee-2 {
     width: 700px;
+    animation: fade-up 0.5s;
 }
 
 .wellness-sub-header {
@@ -57,6 +65,7 @@
 
 .ambulance-no {
     animation: shad 1.5s linear infinite;
+    animation: fade-up 0.5s;
 }
 .ambulance-no{
     padding: 50px;
@@ -65,6 +74,26 @@
     font-size: 1.7rem;
 }
 
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 @keyframes shad {
     0% {
         opacity: 1;

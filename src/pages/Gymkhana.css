@@ -3,8 +3,28 @@
     margin-right: 20px;
     margin-top: 110px;
     margin-bottom: 10%;
+    animation: fade-up 0.5s;
 }
-
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+  }
+  @keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+  }
 .gymkhana-sub-1:hover {
     background-color: #c084fc;
     color: #f8fafc;

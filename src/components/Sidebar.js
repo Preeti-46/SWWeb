@@ -3,7 +3,7 @@ import { LiaGreaterThanSolid } from 'react-icons/lia';
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from 'react-router-dom';
-import Count from '../pages/Count';
+
 
 const Sidebar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
