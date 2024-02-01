@@ -59,7 +59,7 @@ export default function Others() {
           </div>
           <div className='hosetl-imagee-1' style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "10px", fontSize: "1.3rem" }}>
             <img src={yuva1} alt='adminblock' ></img>
-           <div style={{display:"flex",flexWrap:"wrap",gap:"3px", justifyContent:"center"}} className='o-y'> <p style={{color:"#4c5157"}}>Visit of Panjab students and</p>
+           <div style={{display:"flex",flexWrap:"wrap",gap:"3px", justifyContent:"center"}} className='o-y'> <p style={{color:"#4c5157"}}>Visit of Punjab students and</p>
             <p style={{color:"#4c5157"}}>IIT Ropar to Dharwad, Karnataka.</p></div>
           </div>
         </div>
