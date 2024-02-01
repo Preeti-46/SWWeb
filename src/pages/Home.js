@@ -88,7 +88,7 @@ function Home() {
 
             </p></li>
 
-            <li><p style={{ marginTop: "20px" }}>The Hostels and other Students Activity facilities  are spread over two campuses, one at WALMI and the other in its new Permanant campus at Chikkamalligwad.</p></li>
+            <li><p style={{ marginTop: "20px" }}>The Hostels and other Students Activity facilities  are spread over two campuses, one at WALMI campus and the other in its new Permanant campus at Chikkamalligawad.</p></li>
 
           </ul>
         </div>
