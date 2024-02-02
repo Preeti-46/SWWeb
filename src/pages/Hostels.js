@@ -16,8 +16,8 @@ export default function Hostels() {
                 <div className='about-hostel'>
                 <div className='hostel-imagee'>
                     <div className='hosetl-imagee-1' style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "19px", fontSize: "1.3rem" }}>
-                     <div> <img src={hostelimage6} alt='adminblock' ></img></div>  
-                     <div> <img src={hostel1} className='img-1' alt='loading'></img></div>  
+                     <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }}> <img src={hostelimage6} alt='adminblock' ></img></motion.div>  
+                     <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }}> <img src={hostel1} className='img-1' alt='loading'></img></motion.div>  
                     </div>
                 </div>
                     <div className='hostel-image'>
