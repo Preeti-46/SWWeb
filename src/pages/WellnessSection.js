@@ -23,10 +23,10 @@ export default function WellnessSection() {
     return (
         <>
             <motion.div className='wellness-section' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-                <div className='wellness-header'><p style={{borderLeft: "5px solid #312e81", paddingLeft: "10px"}} >Wellness</p></div>
+                <motion.div variants={{hidden:{opacity:0,y:75},visible:{opacity:"1",y:0}}} initial="hidden" animate="visible" transition={{duration:0.5,delay:0.25}} className='wellness-header'><p style={{borderLeft: "5px solid #312e81", paddingLeft: "10px"}} >Wellness</p></motion.div>
                 <div className='hostel-imagee'>
                     <div className='hosetl-imagee-1' style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "19px", fontSize: "1.3rem" }}>
-                        <img src={wellnesscentre} alt='adminblock' className='hostel-imagee-2'></img>
+                     <motion.div variants={{hidden:{opacity:0,y:75},visible:{opacity:"1",y:0}}} initial="hidden" animate="visible" transition={{duration:0.5,delay:0.25}}>  <img src={wellnesscentre} alt='adminblock' className='hostel-imagee-2'></img></motion.div> 
                         <p className='ambulance-no' style={{ margin: "auto", border: "5px solid red", display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", justifyContent: "center" }}><p style={{ fontWeight: "800" }} >Ambulance No:</p><p style={{ fontSize: "1.3rem", fontWeight: "600" }}>8105405107</p></p>
                     </div>
                 </div>
