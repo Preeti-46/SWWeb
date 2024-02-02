@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Gymkhana.css';
 import image1 from './images/gymkhana1.jpg';
 import image2 from './images/gymkhana2.jpg';
@@ -19,7 +19,7 @@ import nsss from './images/studentcampus5.png';
 import { useRef } from 'react';
 import { FaArrowDownLong } from 'react-icons/fa6';
 import BackToTop from './BackToTop';
-import { motion } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
 export default function Gymkhana() {
 
     const club1 = useRef();
@@ -32,13 +32,23 @@ export default function Gymkhana() {
         window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
     }
 
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible")
+        }
+    }, [isInView])
     return (
         <>
-            <motion.div className='main-gymkhana' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
+            <motion.div className='main-gymkhana' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
 
                 <div className='sub-gymkhana'>
                     <div className='gymkhana-header' style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                        <h3 style={{ marginBottom: "20px"}}>GYMKHANA</h3>
+                        <h3 style={{ marginBottom: "20px" }}>GYMKHANA</h3>
 
                     </div>
                     <div className='gymkhana-font'>
@@ -46,7 +56,7 @@ export default function Gymkhana() {
                     </div>
                     <div className='gymkhana-sub' style={{ display: "flex", alignItems: "center", gap: "20px", justifyContent: "center" }}>
 
-                        <div className='gymkhana-sub-1' onClick={() => scrollHandler(sport)} style={{ border: "3px solid #c084fc", cursor: "pointer", padding: "10px 50px 50px 50px", borderRadius: "5px", fontSize: "18px", }}>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='gymkhana-sub-1' onClick={() => scrollHandler(sport)} style={{ border: "3px solid #c084fc", cursor: "pointer", padding: "10px 50px 50px 50px", borderRadius: "5px", fontSize: "18px", }}>
                             <p style={{ textAlign: "center", margin: "10px", fontWeight: "600", fontSize: "1.7rem" }}>SPORTS</p>
                             <ul style={{ fontSize: "20px", fontWeight: "600", position: "relative", top: "0", bottom: "0" }}>
 
@@ -56,8 +66,10 @@ export default function Gymkhana() {
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: "1rem", fontWeight: "200", color: "#0284c7" }}><p>Click here for more</p></div>
                                 <FaArrowDownLong className='blink-shadow ' style={{ position: "absolute", left: "90%", top: "80%", backgroundColor: "#c084fc", padding: "5px 15px", borderRadius: "5px" }} />
                             </ul>
-                        </div>
-                        <div className='gymkhana-sub-1' onClick={() => scrollHandler(club1)} style={{ border: "3px solid #c084fc", padding: "10px 50px 50px 50px", cursor: "pointer", borderRadius: "5px", fontSize: "18px" }}>
+                        </motion.div>
+
+
+                        <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='gymkhana-sub-1' onClick={() => scrollHandler(club1)} style={{ border: "3px solid #c084fc", padding: "10px 50px 50px 50px", cursor: "pointer", borderRadius: "5px", fontSize: "18px" }}>
                             <p style={{ textAlign: "center", margin: "10px", fontWeight: "600", fontSize: "1.7rem", paddingBottom: "20px" }}>TECHNICAL BOARD</p>
                             <ul style={{ fontSize: "20px", position: "relative", top: "0", bottom: "0", fontWeight: "600" }}>
 
@@ -70,8 +82,8 @@ export default function Gymkhana() {
 
                             </ul>
 
-                        </div>
-                        <div className='gymkhana-sub-1' onClick={() => scrollHandler(cultureClub)} style={{ border: "3px solid #c084fc", padding: "10px 50px 50px 50px", cursor: "pointer", borderRadius: "5px", fontSize: "18px" }}>
+                        </motion.div>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='gymkhana-sub-1' onClick={() => scrollHandler(cultureClub)} style={{ border: "3px solid #c084fc", padding: "10px 50px 50px 50px", cursor: "pointer", borderRadius: "5px", fontSize: "18px" }}>
                             <p style={{ textAlign: "center", margin: "10px", fontWeight: "600", fontSize: "1.7rem", paddingBottom: "20px" }}>CULTURE BOARD</p>
 
                             <ul style={{ fontSize: "20px", fontWeight: "600", position: "relative", top: "0", bottom: "0" }}>
@@ -83,8 +95,8 @@ export default function Gymkhana() {
                                 <FaArrowDownLong className='blink-shadow ' style={{ position: "absolute", left: "98%", top: "70%", backgroundColor: "#c084fc", padding: "5px 15px", borderRadius: "5px" }} />
                             </ul>
 
-                        </div>
-                        <div className='gymkhana-sub-1' onClick={() => scrollHandler(nss)} style={{ border: "3px solid #c084fc", padding: "20px 50px 45px 50px", borderRadius: "5px", fontSize: "18px" }}>
+                        </motion.div>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='gymkhana-sub-1' onClick={() => scrollHandler(nss)} style={{ border: "3px solid #c084fc", padding: "20px 50px 45px 50px", borderRadius: "5px", fontSize: "18px" }}>
                             <p style={{ textAlign: "center", margin: "10px", fontWeight: "600" }}></p>
                             <ul style={{ fontSize: "1.5rem", fontWeight: "600", position: "relative", top: "0", bottom: "0" }}>
                                 <li style={{ marginBottom: "10px" }}> <a>NSO</a> </li>
@@ -93,46 +105,47 @@ export default function Gymkhana() {
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: "1rem", fontWeight: "200", color: "#0284c7" }}><p>Click here for more</p></div>
                                 <FaArrowDownLong className='blink-shadow ' style={{ position: "absolute", left: "98%", top: "80%", backgroundColor: "#c084fc", padding: "6px 15px", borderRadius: "5px" }} />
                             </ul>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
                 <div className='about-gymkhana'>
-                    <div className='gymkhana' style={{ borderBottom: "5px solid #86198f" }}>
+                    <div className='gymkhana' ref={ref} style={{ borderBottom: "5px solid #86198f" }}>
 
-
-                        <div className='faculty-in-gymhkana'>
-                            <div>
-                                <div className='alumni-fs'>   <h3 style={{ marginTop: "25px" }} >FACULTY-IN-CHARGE, Gymkhana</h3></div>
-                                <div style={{ width: "50px", height: "3.4px", backgroundColor: "#86198f", marginTop: "7px", marginBottom: "18px" }}></div>
-                            </div>
-
-                            <div className='general-secre-hostel' style={{ display: "flex", gap: "50px", flexWrap: "wrap" }}>
-                                <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                                    <div className='g-s'>
-                                        <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Rajeswara Rao M</p>
-                                        <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
-                                    </div>
-                                    <div className='g-s'>
-                                        <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Vigneshwara Raja P</p>
-                                        <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
-                                    </div>
-                                    <div className='g-s'>
-                                        <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Kavita Devi</p>
-                                        <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
-                                    </div>
+                        <div ref={ref}>
+                            <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 } }} initial="hidden" animate={mainControls} transition={{ duration: 0.5, delay: 0.25 }} className='faculty-in-gymhkana'>
+                                <div>
+                                    <div className='alumni-fs'>   <h3 style={{ marginTop: "25px" }} >FACULTY-IN-CHARGE, Gymkhana</h3></div>
+                                    <div style={{ width: "50px", height: "3.4px", backgroundColor: "#86198f", marginTop: "7px", marginBottom: "18px" }}></div>
                                 </div>
-                                <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                                    <div className='g-s'>
-                                        <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Surya Prakash Ramesh</p>
-                                        <h4>Faculty-In-Charge, Students Welfare (Culture & Events & Technical)</h4>
-                                    </div>
-                                    <div className='g-s'>
-                                        <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Nagaveni S</p>
-                                        <h4>Faculty-In-Charge, Students Welfare (Culture & Events & Technical)</h4>
-                                    </div>
+
+                                <div ref={ref} className='general-secre-hostel' style={{ display: "flex", gap: "50px", flexWrap: "wrap" }}>
+                                    <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+                                        <div className='g-s'>
+                                            <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Rajeswara Rao M</p>
+                                            <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
+                                        </div>
+                                        <div className='g-s'>
+                                            <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Vigneshwara Raja P</p>
+                                            <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
+                                        </div>
+                                        <div className='g-s'>
+                                            <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Kavita Devi</p>
+                                            <h4>Faculty-In-Charge, Students Welfare (Sports/NSS/NCC)</h4>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+                                        <div className='g-s'>
+                                            <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Surya Prakash Ramesh</p>
+                                            <h4>Faculty-In-Charge, Students Welfare (Culture & Events & Technical)</h4>
+                                        </div>
+                                        <div className='g-s'>
+                                            <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr. Nagaveni S</p>
+                                            <h4>Faculty-In-Charge, Students Welfare (Culture & Events & Technical)</h4>
+                                        </div>
+                                    </motion.div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                         <hr />
                         <div>
@@ -140,12 +153,12 @@ export default function Gymkhana() {
                             <div style={{ width: "50px", height: "3.4px", backgroundColor: "#86198f", marginTop: "7px", marginBottom: "18px" }}></div>
                         </div>
 
-                        <div className='information' style={{ marginTop: "20px", display: "flex", gap: "50px", flexWrap: "wrap" }}>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='information' ref={ref} style={{ marginTop: "20px", display: "flex", gap: "50px", flexWrap: "wrap" }}>
                             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
                                 <img src={keerthiK} alt='loading' style={{ height: "100px", width: "100px", borderRadius: "50%" }}></img>
                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5px" }}>
                                     <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr Keerthi Kumar M</p>
-                                    <h4 style={{ marginTop: "5px" }}>Sports Officer</h4>
+                                    <h4 style={{ marginTop: "5px" }}>Assistant Sports Officer</h4>
                                 </div>
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
@@ -164,7 +177,7 @@ export default function Gymkhana() {
                                     <h4 style={{ marginTop: "5px" }}>Assistant Sports Officer</h4>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                         <hr />
 
 
@@ -351,7 +364,7 @@ export default function Gymkhana() {
                         </div>
                         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }} className='board-flex'>
                             <div className='sports-photos' style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                                <div className='tech-club-fs'>    <div style={{  marginBottom: "20px", color: "#4c5157" }} className='t-fs-t'>
+                                <div className='tech-club-fs'>    <div style={{ marginBottom: "20px", color: "#4c5157" }} className='t-fs-t'>
                                     <p>The Technical Council serves as a student-led platform dedicated to nurturing
                                         and promoting students' technical interests. Its primary objectives include facilitating
                                         and supporting various technical clubs in executing their projects,events,
@@ -370,7 +383,7 @@ export default function Gymkhana() {
                             <div className='list-items' style={{ display: "flex", gap: "70px" }}>
                                 <div className='image-div'><img src={techClub} alt='loading'></img></div>
                                 <ul style={{ color: "#5b21b6" }}>
-                                    <p style={{ textAlign: "center",color:"#1e40af" }}>Click Below</p>
+                                    <p style={{ textAlign: "center", color: "#1e40af" }}>Click Below</p>
                                     <li>AI</li>
                                     <li><a href=' https://www.iitdh.ac.in/sdsl/' target='_blank' style={{ textDecoration: "underline" }}>Space Data Science</a></li>
                                     <li><a href='  https://github.com/IITDh-Robotics' target='_blank' style={{ textDecoration: "underline" }}>Robotics</a></li>
@@ -387,7 +400,7 @@ export default function Gymkhana() {
 
                         <div className='tech-board' ref={nss}>
                             <p style={{ marginBottom: "20px", marginTop: "3%" }} className='tech-board-sub-header'>NSO/NSS</p>
-                            <div className='tech-club-fs'>     <p style={{ marginTop: "20px",  color: "#4c5157" }}>The National Service Scheme (NSS) is an Govt. of India program conducted by the ministry of Youth Affairs and Sports. </p>
+                            <div className='tech-club-fs'>     <p style={{ marginTop: "20px", color: "#4c5157" }}>The National Service Scheme (NSS) is an Govt. of India program conducted by the ministry of Youth Affairs and Sports. </p>
                                 <p style={{ color: "#4c5157" }}>IIT Dharwad has adopted the scheme and students are enrolled under the program as volunteers. NSS volunteers took many social welfare activities like Shramdaan and tree plantation.</p>
                             </div>
                         </div>
