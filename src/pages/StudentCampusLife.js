@@ -7,7 +7,7 @@ import sc5 from './images/studentcampus5.png';
 import sc7 from './images/studentcampus.jpg';
 import sc8 from './images/studentcampuslife.jpg';
 import sc9 from './images/homeimage11.jpg'
-import sc10 from './images/homeimage4.jpg'
+import sc10 from './images/homeimage4.jpg' 
 import sc11 from './images/homeimage9.jpg'
 import sc12 from './images/homeimage7.jpg';
 import { motion } from 'framer-motion';
