@@ -145,7 +145,7 @@ export default function Gymkhana() {
                                 <img src={keerthiK} alt='loading' style={{ height: "100px", width: "100px", borderRadius: "50%" }}></img>
                                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5px" }}>
                                     <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr Keerthi Kumar M</p>
-                                    <h4 style={{ marginTop: "5px" }}>Assistant Sports Officer</h4>
+                                    <h4 style={{ marginTop: "5px" }}>Sports Officer</h4>
                                 </div>
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
