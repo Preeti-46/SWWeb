@@ -59,7 +59,7 @@ export default function Others() {
           </motion.div>
           <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1' style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "10px", fontSize: "1.3rem" }}>
             <img src={yuva1} alt='adminblock' ></img>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "3px", justifyContent: "center" }} className='o-y'> <p style={{ color: "#4c5157" }}>Visit of Panjab students and</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "3px", justifyContent: "center" }} className='o-y'> <p style={{ color: "#4c5157" }}>Visit of Punjab students and</p>
               <p style={{ color: "#4c5157" }}>IIT Ropar to Dharwad, Karnataka.</p></div>
           </motion.div>
         </div>
