@@ -20,7 +20,7 @@ import { FaArrowLeft } from 'react-icons/fa6';
 import tembe from './images/Tembe.png';
 import RameshKumar from './images/RameshKumar.png';
 import ramjee from './images/r1.jpeg';
-
+import { motion } from 'framer-motion';
 export default function StudentDivisionOrgano() {
 
 
@@ -50,21 +50,21 @@ export default function StudentDivisionOrgano() {
                             <h3 style={{ fontWeight: "600", color: "#313132" }} className='entity-header'>ORGANOGRAM</h3>
                         </div>
                         <div>
-                        <div className='info-1' style={{ marginTop: "20px" }}>
+                        <motion.div variants={{hidden:{opacity:0,y:75},visible:{opacity:"1",y:0}}} initial="hidden" animate="visible" transition={{duration:0.5,delay:0.25}} className='info-1' style={{ marginTop: "20px" }}>
                             <img src={pradeepy} alt='loaidng'></img>
                             <div className='name-fs'>  <p><span style={{ fontWeight: "600", color: "#4338ca" }}>Prof. Pradeep Yammiyavar</span></p></div>
                             <div className='des-fs'>    <h4 style={{ fontWeight: "600", color: "#313132" }} className='designation'>Dean, Students Welfare</h4></div>
-                        </div>
-                        <div className='info-1' style={{ marginTop: "20px" }}>
+                        </motion.div>
+                        <motion.div variants={{hidden:{opacity:0,y:75},visible:{opacity:"1",y:0}}} initial="hidden" animate="visible" transition={{duration:0.5,delay:0.25}} className='info-1' style={{ marginTop: "20px" }}>
                             <img src={ramjee} alt='loaidng'></img>
                             <div className='name-fs'>  <p><span style={{ fontWeight: "600", color: "#4338ca" }}>Prof. Ramjee Repaka</span></p></div>
                             <div className='des-fs'>    <h4 style={{ fontWeight: "600", color: "#313132" }} className='designation'>Joint Dean, Students Welfare</h4></div>
                         
-                        </div>
+                        </motion.div>
                         </div>
                     </div>
 
-                    <div className='associate-deans'>
+                    <motion.div variants={{hidden:{opacity:0,y:75},visible:{opacity:"1",y:0}}} initial="hidden" animate="visible" transition={{duration:0.5,delay:0.25}} className='associate-deans'>
                         <div className='associate-dean-1'>
                             <img src={prabhu} alt='loading'></img>
                             <div className='name-fs'>    <p><span style={{ fontWeight: "600", color: "#4338ca" }}>Dr. R Prabhu</span></p></div>
@@ -105,7 +105,7 @@ export default function StudentDivisionOrgano() {
                             <div className='des-fs'>    <div style={{ display: "flex", gap: "3px", justifyContent: "center", flexWrap: "wrap" }}>    <h4 style={{ fontWeight: "600", color: "#313132" }} className='designation'>Students Welfare</h4>
                                 <h4 style={{ fontWeight: "600", color: "#313132" }} className='designation'>Advisor</h4></div></div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div className='student-admin-office-1'>
@@ -695,7 +695,7 @@ export default function StudentDivisionOrgano() {
                             <img src={keerthiK} alt='loading' style={{ height: "100px", width: "100px", borderRadius: "50%" }}></img>
                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5px" }}>
                                 <p style={{ fontWeight: "600", color: "#4338ca" }}>Dr Keerthi Kumar M</p>
-                                <h4 style={{ marginTop: "5px" }}>Sports Officer</h4>
+                                <h4 style={{ marginTop: "5px" }}>Assistant Sports Officer</h4>
                             </div>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
