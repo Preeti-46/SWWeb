@@ -26,43 +26,43 @@ export default function StudentCampusLife() {
 
         </div>
         <div className='hostel-imagee'>
-          <div className='hosetl-imagee-1'>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
             <img src={sc1} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
             <img src={sc2} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
             <img src={sc8} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
             <img src={sc4} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc5} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc7} alt='adminblock' ></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc9} alt='adminblock'></img>
 
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc10} alt='adminblock'></img>
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc11} alt='adminblock'></img>
-          </div>
-          <div className='hosetl-imagee-1'>
+          </motion.div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: "1", y: 0 } }} initial="hidden" animate="visible" transition={{ duration: 0.5, delay: 0.25 }} className='hosetl-imagee-1'>
           <img src={sc12} alt='adminblock'></img>
-          </div>
+          </motion.div>
 
 
         </div>
