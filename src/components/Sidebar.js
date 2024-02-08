@@ -3,7 +3,7 @@ import { LiaGreaterThanSolid } from 'react-icons/lia';
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from 'react-router-dom';
-
+import logo from '../pages/images/logo-iit.jpg'
 
 const Sidebar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -91,7 +91,7 @@ const Sidebar = ({ children }) => {
                         <div className="top_section">
                             <div className='top-info'>
                                 <div className='info1'>
-                                    <img src='https://pbs.twimg.com/profile_images/1677188130636701696/Pju9teoq_400x400.jpg' alt='logo' style={{ borderRadius: "50%", objectFit: "cover", marginRight: "20px", cursor: "pointer" }}></img>
+                                    <img src={logo} alt='logo' style={{ borderRadius: "50%", objectFit: "cover", marginRight: "20px", cursor: "pointer" }}></img>
                                     <h1 className='logo-1' style={{ color: "white", letterSpacing: "2.5px", fontWeight: "600", textAlign: "center" }}>IIT</h1>
                                     <h1 className='logo-1' style={{ color: "white", letterSpacing: "2.5px", fontWeight: "600", textAlign: "center" }}>DHARWAD  </h1>
                                 </div>
